@@ -5,6 +5,9 @@ import java.util.List;
 
 import net.sourceforge.jpcap.capture.PacketCapture;
 
+/**
+ * A test/example application for NetworkDeviceInfo.
+ */
 public class NetworkDeviceInfoTest {
 
     public static void main (String[] args) throws Exception {
@@ -23,7 +26,7 @@ public class NetworkDeviceInfoTest {
             System.out.println("  Address:       " + info.getInterfaceAddress());
             System.out.println("  Subnet Mask:   " + info.getInterfaceSubnetMask());
             System.out.println("  jpcap Display: " + info.getJpcapDisplayName());
-            System.out.println("  GUID:          k" + info.getGuid());
+            System.out.println("  GUID:          " + info.getGuid());
         }
 
         // Device names from NetworkDeviceInfo can be passed directly to jpcap:
